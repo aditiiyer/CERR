@@ -67,7 +67,7 @@ planC{indexS.dose}(newDoseNum).doseArray = gammaM;
 planC{indexS.dose}(newDoseNum).doseUID = createUID('dose');
 strName = planC{indexS.structures}(strNum).structureName;
 planC{indexS.dose}(newDoseNum).fractionGroupID = ['Gamma_',...
-    num2str(doseAgreement),'%_',num2str(distAgreement*10),'mm','_',strName];
+    num2str(doseAgreement),'Gy_',num2str(distAgreement*10),'mm','_',strName];
 
 %Switch to new dose
 sliceCallBack('selectDose', num2str(newDoseNum));
